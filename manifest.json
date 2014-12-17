@@ -1,0 +1,14 @@
+{
+  "name": "Food Leave",
+  "description": "Joins and leaves the slack food channel depending on your city",
+  "version": "2.0",
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://maps.googleapis.com; object-src 'self'",
+  "permissions": [
+    "geolocation"
+  ],
+  "background": {
+    "scripts": ["jquery-1.11.1.min.js", "foodLeave.js"],
+    "persistent": true
+  },
+  "manifest_version": 2
+}
